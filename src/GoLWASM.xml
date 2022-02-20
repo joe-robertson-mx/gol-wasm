@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.golwasm.GoLWASM" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Go LWASM</name>
+    <description>A WebAssembly implementation of the Game of Life</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="CellSize" type="integer" required="true" defaultValue="5">
+                <caption>Cell Size</caption>
+                <description>Size of each square in px</description>
+            </property>
+            <property key="GridColour" type="string" required="true" defaultValue="#CCCCCC">
+                <caption>Grid Colour</caption>
+                <description>Colour of Grid</description>
+            </property>
+            <property key="DeadColour" type="string" required="true" defaultValue="#FFFFFF">
+                <caption>Dead Colour</caption>
+                <description>Colour of Dead Cells</description>
+            </property>
+            <property key="AliveColour" type="string" required="true" defaultValue="#000000">
+                <caption>Alive Colour</caption>
+                <description>Colour of Alive Cells</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

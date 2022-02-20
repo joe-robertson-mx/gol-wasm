@@ -1,0 +1,41 @@
+{
+  "name": "golwasm",
+  "widgetName": "GoLWASM",
+  "version": "1.0.0",
+  "description": "A WebAssembly implementation of the Game of Life",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Joe Robertson",
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0",
+    "@rollup/plugin-wasm": "^5.1.2",
+    "@types/big.js": "^6.0.2",
+    "@types/react": "~17.0.1",
+    "@types/react-dom": "~17.0.1",
+    "rollup": "^2.67.2",
+    "rollup-plugin-copy": "^3.4.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "wasm-game-of-life-joerob319": "^0.4.0",
+    "wasm-game-of-life-jrbundler": "^0.1.0"
+  }
+}
